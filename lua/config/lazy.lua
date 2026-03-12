@@ -31,9 +31,12 @@ end
 -- Prepend lazy.nvim to runtimepath so `require("lazy")` works
 vim.opt.rtp:prepend(lazypath)
 
--- Start lazy.nvim: load plugin specs from lua/plugins/ (e.g. lua/plugins/init.lua)
+-- Start lazy.nvim: load plugin specs from lua/plugins/ (e.g. lua/plugins/init.lua, plugins/telescope.lua)
 require("lazy").setup({
-  spec = { { import = "plugins" } },
+  spec = {
+    { import = "plugins" },
+    { import = "plugins.telescope" },
+  },
   install = { colorscheme = {} },
   checker = { enabled = false },
 })
