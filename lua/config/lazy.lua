@@ -39,6 +39,7 @@ require("lazy").setup({
     { import = "plugins.cmp" },
     { import = "plugins.lsp" },
     { import = "plugins.which-key" },
+    { import = "plugins.lualine" },
   },
   install = { colorscheme = {} },
   checker = { enabled = false },
