@@ -36,6 +36,9 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
     { import = "plugins.telescope" },
+    { import = "plugins.cmp" },
+    { import = "plugins.lsp" },
+    { import = "plugins.which-key" },
   },
   install = { colorscheme = {} },
   checker = { enabled = false },
